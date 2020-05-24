@@ -1,0 +1,23 @@
+.wrap {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  ul,
+  li {
+    list-style: none;
+	}
+	img{
+		display: block;
+  }
+  .h7{
+    font-size: 14px;
+  }
+  .h8{
+    font-size: 12px;
+  }
+  hr{
+    border: 1px solid #EDF4EE;
+  }
+}

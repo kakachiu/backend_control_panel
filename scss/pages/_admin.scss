@@ -1,0 +1,81 @@
+.page-item.active .page-link {
+  background-color: #2a8356;
+  margin: 0;
+}
+
+
+.form-control:focus{
+  background-color: #EDF4EE;
+}
+
+.inputCheck {
+  appearance: none;
+  outline: none;
+  display: none;
+}
+
+.inputCheck {
+  display: inline-block;
+  border: 1px solid #222;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+input[type="checkbox"]:hover {
+  border-color: #2a8356;
+}
+
+.inputCheck:checked {
+  display: inline-block;
+  &:before {
+    content: "✓";
+    top: -100px;
+    display: block;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: #2a8356;
+  }
+}
+
+.viewModel {
+  .img {
+		height: auto;
+		background-image: url(../images/emir.jpeg);
+		background-size: cover;
+		background-position:  center center;
+}
+}
+
+.verifiedSelect{
+	&:hover{
+		.icon{
+			transform: rotate(180deg);
+		}
+	}
+	.icon{
+		transition: 0.5s;
+	}
+
+}
+.infoBtn{
+  height: 0;
+  transition: 0.5s;
+  position: relative;
+  bottom: -10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.infoBtnBlock{
+  height: 80px;
+  margin-left: auto;
+  padding: 12px;
+  padding-bottom: 15px;
+}
+
+.iconRotate{
+  transform: rotate(180deg);
+}

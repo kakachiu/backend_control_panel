@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>六角後台</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrap d-flex justify-content-between">
+      <!-- 左邊的sidebar -->
+      <section
+        class="sideBar bg-primary d-flex flex-column justify-content-between "
+      >
+        <!-- LOGO -->
+        <h1 class="logo pl-4 mt-4 mb-5">
+          <a href="index.html">
+            <img src="./assets/images/logo-ANSWER.svg" />
+          </a>
+        </h1>
+        <!-- menu -->
+        <ul class="menu pl-0 mb-auto">
+          <li class="mb-4 pl-4">
+            <a
+              href="#"
+              class="py-1 text-dark d-flex align-items-center font-weight-bold"
+            >
+              <span class="material-icons mr-3">
+                poll
+              </span>
+              <span>
+                Dashboard
+              </span>
+            </a>
+          </li>
+          <li class="mb-4 pl-4" data-aos="fade-up">
+            <a
+              href="index.html"
+              class="py-1 text-dark d-flex align-items-center font-weight-bold"
+            >
+              <span class="material-icons mr-3">
+                question_answer
+              </span>
+              <span>
+                Question
+              </span>
+            </a>
+          </li>
+          <li class="mb-4 pl-4">
+            <a
+              href="index.html"
+              class="py-1 text-dark d-flex align-items-center font-weight-bold"
+            >
+              <span class="material-icons mr-3">
+                assignment
+              </span>
+              <span>
+                Assignment
+              </span>
+            </a>
+          </li>
+          <li class="mb-4 pl-4">
+            <a
+              href="#"
+              class="py-1 text-dark d-flex align-items-center font-weight-bold"
+            >
+              <span class="material-icons mr-3">
+                video_library
+              </span>
+              <span>
+                Course
+              </span>
+            </a>
+          </li>
+          <li class="mb-4 pl-4">
+            <a
+              href="admin.html"
+              class="py-1 text-dark d-flex align-items-center font-weight-bold"
+            >
+              <span class="material-icons mr-3">
+                people
+              </span>
+              <span>
+                Admin
+              </span>
+            </a>
+          </li>
+          <li class="mb-4 pl-4">
+            <a
+              href="#"
+              class="py-1 text-dark d-flex align-items-center font-weight-bold"
+            >
+              <span class="material-icons mr-3">
+                settings
+              </span>
+              <span>
+                Settings
+              </span>
+            </a>
+          </li>
+        </ul>
+        <!-- 個人資訊 -->
+        <div class="personInfo d-flex align-items-center pl-4 mb-5">
+          <!-- 左側照片 -->
+          <div class="img mr-3">
+            <img src="./assets/images/andychen.jpeg">
+          </div>
+          <!-- 右側文字 -->
+          <div class="info">
+            <h6 class="text-dark font-weight-bold mb-0">Andy Chen</h6>
+            <div class="h7 text-secondary">andy0401@mail.com</div>
+          </div>
+        </div>
+      </section>
+
+      
+<section class="main container py-4">
+    <!-- 最頂端的Bar -->
+      <div class="topBar d-flex justify-content-between mb-5">
+        <!-- 左邊文字及下拉式選單 -->
+        <div class="courseSelect mr-auto d-flex align-items-center">
+          <h4 class="text-dark font-weight-bold mr-5 mb-0">Assignment</h4>
+          <!-- 下拉選單 -->
+          <div class="dropdown">
+            <button
+              class="btn btn-transition d-flex align-items-center"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+            >
+              <span class="mr-3 font-weight-bold">
+                All Courses
+              </span>
+              <!-- 下拉箭頭 icon -->
+              <span class="material-icons text-success">
+                expand_more
+              </span>
+            </button>
+            <div
+              class="dropdown-menu py-2"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <a class="dropdown-item text-dark" href="#">HTML/CSS</a>
+              <a class="dropdown-item text-dark" href="#">jQuery</a>
+              <a class="dropdown-item text-dark" href="#">javaScript</a>
+            </div>
+          </div>
+        </div>
+        <!-- 右側icons -->
+        <div class="topBarIcons">
+          <a class="text-dark mr-4" href="#">
+            <span class="material-icons">
+              search
+            </span>
+          </a>
+          <a class="text-dark" href="#">
+            <span class="material-icons">
+              notifications_active
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="commentTopBar d-flex justify-content-between">
+        <!-- 下拉選單 -->
+        <div class="dropdown">
+          <button
+            class="btn btn-transition d-flex align-items-center"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+          >
+            <span class="mr-2 font-weight-bold ">
+              All (4)
+            </span>
+            <!-- 下拉箭頭 icon -->
+            <span class="material-icons text-success">
+              expand_more
+            </span>
+          </button>
+          <!-- 下拉式選單 -->
+          <div class="dropdown-menu py-3" >
+            <a class="dropdown-item text-dark" href="#">Chapter Assignment 2</a>
+            <a class="dropdown-item text-dark" href="#">Chapter Assignment 1</a>
+            <a class="dropdown-item text-dark" href="#">Final Assignment</a>
+            <a class="dropdown-item text-dark" href="#">Final Assignment</a>
+          </div>
+        </div>
+        <!-- 右側評論文字 -->
+        <div class="h8 text-secondary text-right">2 comments</div>
+      </div>
+
+    <!-- 下方評論內容 -->
+    <!-- 左側選單 -->
+  <div class="row">
+    <div class="col-4">
+        <!-- 評論清單 -->
+        <div class="list-group selectComment" id="list-tab" role="tablist">
+          <a href="#list-home" class="list-group-item list-group-item-action active py-3 border-info " id="list-home-list" data-toggle="list"  role="tab">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="h8 text-dark">Chapter Assignment 2</div>
+              <div class="h8 text-dark">4 hrs ago</div>
+            </div>
+            <div class="d-flex  justify-content-between">
+              <h6 class="mb-0 text-dark font-weight-bold">Please check this file…</h5>
+              <div class="h8 text-secondary">Emily Wang</div>
+            </div>
+          </a>
+          <a href="#list-profile" class="list-group-item list-group-item-action  py-3 border-info " id="list-home-list" data-toggle="list"  role="tab">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="h8 text-dark">Chapter Assignment 1</div>
+              <div class="h8 text-dark">12 hrs ago</div>
+            </div>
+            <div class="d-flex  justify-content-between">
+              <h6 class="mb-0 text-dark font-weight-bold">My Homework</h5>
+              <div class="h8 text-secondary">David Xu</div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action py-3 border-info ">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="h8 text-dark">Final Assignment</div>
+              <div class="h8 text-dark">18 hrs ago</div>
+            </div>
+            <div class="d-flex  justify-content-between">
+              <h6 class="mb-0 text-dark font-weight-bold">Have a problem with this…</h5>
+              <div class="h8 text-secondary">Tony Wei</div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action py-3 border-info ">
+            <div class="d-flex justify-content-between mb-2">
+              <div class="h8 text-dark">Final Assignment</div>
+              <div class="h8 text-dark">19 hrs ago</div>
+            </div>
+            <div class="d-flex  justify-content-between">
+              <h6 class="mb-0 text-dark font-weight-bold">Did I do it right?</h5>
+              <div class="h8 text-secondary">Christina Lin</div>
+            </div>
+          </a>
+        </div>  
+    </div>
+
+    <!-- 右側評論 -->
+    <div class="col-8">
+      <div class="contentWrap">
+      <div class="tab-content comment mb-4" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="card border-info">
+            <div class="card-header d-flex justify-content-between align-items-center bg-primary py-3 ">
+              <!-- 左邊文字 -->
+              <div class="title">
+                <div class="h8 text-dark mb-2">Chapter Assignment 2 / HTML&CSS</div>
+                <h6 class="text-dark mb-0 font-weight-bold">Please check this file for me, thanks!</h6>
+              </div>
+              <!-- 右邊更多選項Icons -->
+              <div class="moreIcon">
+                <a href="#" class="text-dark">
+                  <span class="material-icons">
+                    more_vert
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body ">
+              <div class="media commentOne">
+                <div class="img  align-self-start mr-3">
+                  <img class="img-fluid" src="./assets/images/emilywang.jpeg">
+                </div>
+                <div class="media-body">
+                  <h6 class="mm-0 text-dark font-weight-bold">Emily Wang</h6>
+                  <div class="h8 text-secondary mb-3">10:38 AM (4 hours ago)</div>
+                  <p  class="h7 text-dark">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="mx-2 text-success bg-primary">div</code> is bigger than the height of the <code class="mx-2 text-success bg-primary"> img </code>? There is a gap below the image, but it doesn’t seems to be a padding/margin.</p>
+                  <p> What is the gap or extra space below image?</p>
+                  <a href="#" class="btn btn-primary">
+                    <span class="material-icons mr-2 text-dark align-middle paperClip">
+                      attachment
+                    </span>
+                    <span class="align-middle">
+                      HW-2-David.zip
+                    </span>
+                  </a>
+                  <hr>
+                </div>
+              </div>
+
+              <!-- 第二則評論 -->
+              <div class="media commentTwo ">
+                <div class="img  align-self-start mr-3 pt-1">
+                  <img class="img-fluid" src="./assets/images/andychen.jpeg">
+                </div>
+                <div class="media-body">
+                  <div class="topText d-flex align-items-center justify-content-between">
+                    <div class="text">
+                      <h6 class="mm-0 text-dark font-weight-bold">Andy Chen (You)</h6>
+                      <div class="h8 text-secondary mb-3">13:24 AM (1 hours ago)</div>
+                    </div>
+                    <div class="topIcons d-flex">
+                      <a href="#" class="mr-4 text-success starEmpty">
+                        <span class="material-icons">
+                          star_border
+                        </span>
+                      </a>
+                      <a href="#" class="text-success starSolid">
+                        <span class="material-icons">
+                          star
+                        </span>
+                      </a>
+                      <a href="#" class= "text-success">
+                        <span class="material-icons">
+                          create
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <p  class="h7 text-dark">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. </p>
+                  <p class="h7 text-dark">You can: </p>
+                  <p class="h7 text-dark">• adjust the <code class="mx-2 text-success bg-primary">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="mx-2 text-success bg-primary"> middle</code> ) or </p>
+                  <p class="h7 text-dark">• change the<code class="mx-2 text-success bg-primary"> display</code> so it isn’t inline.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 第二個tab -->
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+          <div class="card border-info">
+            <div class="card-header d-flex justify-content-between align-items-center bg-primary py-3 ">
+              <!-- 左邊文字 -->
+              <div class="title">
+                <div class="h8 text-dark mb-2">Chapter Assignment 2 / HTML&CSS</div>
+                <h6 class="text-dark mb-0 font-weight-bold">Please check this file for me, thanks!</h6>
+              </div>
+              <!-- 右邊更多選項Icons -->
+              <div class="moreIcon">
+                <a href="#" class="text-dark">
+                  <span class="material-icons">
+                    more_vert
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body ">
+              <div class="media commentOne">
+                <div class="img  align-self-start mr-3">
+                  <img  src="./assets/images/emilywang.jpeg">
+                </div>
+                <div class="media-body">
+                  <h6 class="mm-0 text-dark font-weight-bold">Emily Wang</h6>
+                  <div class="h8 text-secondary mb-3">10:38 AM (4 hours ago)</div>
+                  <p  class="h7 text-dark">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code class="mx-2 text-success bg-primary">div</code> is bigger than the height of the <code class="mx-2 text-success bg-primary"> img </code>? There is a gap below the image, but it doesn’t seems to be a padding/margin.</p>
+                  <p> What is the gap or extra space below image?</p>
+                  <a href="#" class="btn btn-primary">
+                    <span class="material-icons mr-2 text-dark align-middle paperClip">
+                      attachment
+                    </span>
+                    <span class="align-middle">
+                      HW-2-David.zip
+                    </span>
+                  </a>
+                  <hr>
+                </div>
+              </div>
+
+              <div class="media commentTwo ">
+                <div class="img  align-self-start mr-3 pt-1">
+                  <img  src="./assets/images/andychen.jpeg">
+                </div>
+                <div class="media-body">
+                  <div class="topText d-flex align-items-center justify-content-between">
+                    <div class="text">
+                      <h6 class="mm-0 text-dark font-weight-bold">Andy Chen (You)</h6>
+                      <div class="h8 text-secondary mb-3">13:24 AM (1 hours ago)</div>
+                    </div>
+                    <div class="topIcons d-flex">
+                      <a href="#" class="mr-4 text-success starEmpty">
+                        <span class="material-icons">
+                          star_border
+                        </span>
+                      </a>
+                      <a href="#" class="text-success starSolid">
+                        <span class="material-icons">
+                          star
+                        </span>
+                      </a>
+                      <a href="#" class= "text-success">
+                        <span class="material-icons">
+                          create
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <p  class="h7 text-dark">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. </p>
+                  <p class="h7 text-dark">You can: </p>
+                  <p class="h7 text-dark">• adjust the <code class="mx-2 text-success bg-primary">vertical-align</code> of the image to position it elsewhere (e.g. the <code class="mx-2 text-success bg-primary"> middle</code> ) or </p>
+                  <p class="h7 text-dark">• change the<code class="mx-2 text-success bg-primary"> display</code> so it isn’t inline.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="commentFooter d-flex justify-content-between align-items-center ">
+        <!-- 左邊前一則下一則icon -->
+        <div class="selectArrow py-2">
+          <a href="#" class="text-dark">
+            <span class="material-icons mr-4">
+              chevron_left
+            </span>
+          </a>
+          <a href="#" class="text-dark">
+            <span class="material-icons">
+              chevron_right
+            </span>
+          </a>
+        </div>
+        <!-- 右邊 btn -->
+        <div class="commentBtn d-flex pr-1">
+          <button type="button" class="btn btn-outline-success px-5 mr-3">Mark as read
+          </button>
+          <button type="button" class="btn btn-success px-4  replayBtn">Reply</button>
+        </div>
+      </div>
+<!-- 按了replay才會出現 -->
+        <div class="edit border border-info w-100">
+            <ul class="editSelect d-flex bg-primary align-items-center py-3 mb-0  border-top border-bottom  border-top-info border-bottom-info px-1">
+              <!-- 文字下拉式選單 -->
+              <li class="mr-4">
+                <div class="dropdown">
+                  <a class="btn btn-transition dropdown-toggle text-dark font-weight-bold" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" >
+                    Body Text
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">微軟正黑體</a>
+                    <a class="dropdown-item" href="#">Adobe 繁黑體</a>
+                    <a class="dropdown-item" href="#">Aria</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mr-4"> 
+                <a href="#" class="text-dark d-block mt-2">
+                  <span class="material-icons ">
+                    format_bold
+                  </span>
+                </a>
+              </li>
+              <li class="mr-4"> 
+                <a href="#" class="text-dark d-block mt-2">
+                  <span class="material-icons ">
+                    format_italic
+                  </span>
+                </a>
+              </li>
+              <li class="mr-4"> 
+                <a href="#" class="text-dark d-block mt-2">
+                  <span class="material-icons ">
+                    list
+                  </span>
+                </a>
+              </li>
+              <li class="mr-4"> 
+                <a href="#" class="text-dark d-block mt-2">
+                  <span class="material-icons ">
+                    format_list_numbered
+                  </span>
+                </a>
+              </li>
+              <li class="mr-4"> 
+                <a href="#" class="text-dark d-block mt-2">
+                  <span class="material-icons ">
+                    insert_photo
+                  </span>
+                </a>
+              </li>
+              <li class="mr-4"> 
+                <a href="#" class="text-dark d-block mt-2">
+                  <span class="material-icons ">
+                    insert_link
+                  </span>
+                </a>
+              </li>
+              <li> 
+                <a href="#" class="text-dark d-block mt-2">
+                  <span class="material-icons ">
+                    code
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div class="textContent bg-white ">
+              <textarea name="" placeholder="Reply an answer…" class="px-3 pt-2 border-0 "></textarea>
+              
+            </div>
+            <!-- reply按鈕 -->
+            <div class="editBtn d-flex justify-content-end pb-3 pr-3 bg-white">
+              <button type="button" class="btn btn-outline-success px-5 mr-3 cancelBtn" data-toggle="modal" data-target="#cancelModal">Cancel
+              </button>
+              <button type="button" class="btn btn-success px-4 editReplyBtn">Reply</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="cancelModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="exampleModalLabel">確定取消編輯</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-4">
+        您正在編輯頁面，確定取消編輯?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success px-5 " data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-outline-danger px-5 sureEditBtn">確定</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

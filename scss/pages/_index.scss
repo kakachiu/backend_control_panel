@@ -1,0 +1,49 @@
+.comment {
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .paperClip {
+    transform: rotate(90deg);
+  }
+}
+.textContent {
+  textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.topIcons {
+  position: relative;
+}
+
+.starSolid {
+  position: absolute;
+  opacity: 0;
+}
+
+.addStar.starSolid {
+  opacity: 1;
+}
+.contentWrap {
+  position: relative;
+}
+.edit {
+  position: absolute;
+  bottom: -3px;
+  display: none;
+}
+
+.starEdit.edit {
+  display: block;
+}
+
+
+.modal-backdrop.show.blocknone{
+  display: none;
+}
